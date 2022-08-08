@@ -4,8 +4,7 @@ from cfonts import render, say
 import json
 from colorama import Style
 from colorama import Fore
-from lxml import html
-from ast import For
+
 _C = 'https://www.tiktok.com/'
 _B = 'content-type'
 _A = 'cookie'
