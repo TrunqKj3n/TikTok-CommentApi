@@ -13,8 +13,24 @@ print(f"{Fore.GREEN}Version: {Fore.WHITE}1.0{Fore.RESET}")
 print(f"{Fore.GREEN}Github: {Fore.WHITE}https://github.com/TrungKj3n{Fore.WHITE}")
 print(f"{Fore.GREEN}Description: {Fore.WHITE}TikTok TraoDoiSub{Fore.RESET}")
 cookie = input('Enter your cookie tiktok: ')
-headers = {'accept': '*/*', 'accept-language': 'vi,vi-VN;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5,zh-CN;q=0.4,zh;q=0.3', 'connection': 'keep-alive', 'content-length': '0', _B: 'application/x-www-form-urlencoded', _A: cookie, 'origin': 'https://www.tiktok.com', 'referer': _C, 'sec-ch-ua': '".Not/A)Brand";v="99","GoogleChrome";v="103","Chromium";v="103"',
-           'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': '"Windows"', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-site', 'user-agent': 'Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/103.0.0.0Safari/537.36', 'x-secsdk-csrf-request': '1', 'x-secsdk-csrf-version': '1.2.7'}
+headers = {
+    'accept': '*/*',
+    'accept-language': 'vi,vi-VN;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5,zh-CN;q=0.4,zh;q=0.3',
+    'connection': 'keep-alive',
+    'content-length': '0',
+    _B: 'application/x-www-form-urlencoded',
+    _A: cookie, 'origin': 'https://www.tiktok.com',
+    'referer': _C,
+    'sec-ch-ua': '".Not/A)Brand";v="99","GoogleChrome";v="103","Chromium";v="103"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Windows"',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-site': 'same-site',
+    'user-agent': 'Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/103.0.0.0Safari/537.36',
+    'x-secsdk-csrf-request': '1',
+    'x-secsdk-csrf-version': '1.2.7'
+}
 headers.update(
     {'tt-csrf-token': headers[_A].split('tt_csrf_token=')[1].split(';')[0]})
 token = input(f"Nhập token TDS : ")
